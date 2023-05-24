@@ -1,0 +1,35 @@
+{
+    "name": "SiteBlocker",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Website blocker + IP insights",
+    "icons":{
+      "16":"icons/fin16.png",
+      "32":"icons/fin32.png",
+      "48":"icons/fin48.png",
+      "128":"icons/fin128.png"
+    },
+    "content_scripts":[
+      {
+        "matches":[
+          "<all_urls>"
+        ],
+        "js":["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "SiteBlocker"
+    },
+    "permissions": ["storage","tabs","webNavigation"],
+    "web_accessible_resources": [
+      {
+        "resources":["/*.jpg"],
+          "matches": ["<all_urls>"]
+      }
+    ],
+    "background":{
+      "service_worker":"background.js"
+    }
+  }
+  

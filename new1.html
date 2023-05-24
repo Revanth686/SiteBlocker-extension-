@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        min-width: 320px;
+        min-height: 450px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: black;
+        color:rgba(240, 248, 255, 0.841);
+        background-image: url(https://th.bing.com/th/id/OIP.q-eFDacPhh3ZK6dB-fuZOAHaE7?pid=ImgDet&w=1354&h=900&rs=1);
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    #main{
+        margin-left :0%;
+        margin-right :10%;
+        background-color: rgba(255, 255, 255, 0);
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-overflow: clip;
+    }
+    #hd, #ft{
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navul{
+    background-color: transparent;
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1px;
+    text-decoration: none;
+    font-size: 110%;
+    }
+    .navli{
+        color: aliceblue;
+        background-color: rgba(240, 255, 255, 0.409);
+        display: inline;
+        text-decoration: none;
+    }
+    nav a:visited{
+        color: rgb(255, 255, 255);
+    }
+    .navli:hover{
+        background-color: steelblue ;
+    }
+    .here{
+        background-color: rgba(92, 182, 255, 0.79)!important ;
+    }
+    
+    #hd button, #ft button, #ls button{
+        font-size: large;
+        border-radius: 5px;
+        padding:0.4%;
+        border: 1px solid rgba(240, 255, 255, 0);
+        color:whitesmoke;
+        background-color: rgba(240, 255, 255, 0.635);
+    }
+    #hd button:active , #ft button:active, #ls button:active{
+        font-weight: bold;
+        box-shadow: 2px 2px 2px rgba(240, 255, 255, 0.722);
+    }
+    #ls{
+        width: 100%;
+    }
+    
+    #tb1{
+        width: 100%;
+        overflow-wrap: break-word;
+        border: 1px solid rgba(180, 180, 180, 0.1);
+        font-size: medium;
+    }
+    #tb1 tr:nth-child(even){
+        width:100%;
+        background-color:rgba(92, 182, 255, 0.211);
+    }
+    #tb1 tr:nth-child(odd){
+        width:100%;
+        background-color:rgba(92, 182, 255, 0.081);
+    }
+    #brwer{
+        color:rgba(128, 128, 128, 0.905)
+    }
+    #brwer2{
+        color:rgba(128, 128, 128, 0.905);
+        font-size: 50%
+    }
+    .hding{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color:rgba(240, 248, 255, 0.841);
+    background-image: url(https://th.bing.com/th/id/OIP.q-eFDacPhh3ZK6dB-fuZOAHaE7?pid=ImgDet&w=1354&h=900&rs=1);
+    background-size: cover;
+    background-repeat: repeat-y;
+    margin-bottom: 2.5%;
+    }
+    .jig{
+        background-color: rgba(92, 182, 255, 0.211);
+    };
+    
+    </style>
+    <script src="ip2.js">
+    </script>
+</head>
+<body>
+    <div class="hding">
+        <nav>
+            <div class="navul">
+                <a href="index.html"class="navli"><p >IP</p></a>
+                <a href="new1.html" class="navli here"><p >Blocker</p></a>
+            </div>
+        </nav>
+    </div><br>
+    <div id="main">
+        <div id="hd">
+            <button id="add">Add this site</button>
+        </div>
+        <div id="ls">
+            <table style="width:100%">
+                <tr id="delit" class="jig">
+                    <td><p id="brwer"> ex: example.com </p><p id="brwer2">https://www.example.com/</p></td>
+                </tr>
+            </table>
+            <table id="tb1">
+                <!-- <tr>
+                    <td>exaample</td>
+                </tr> -->
+            </table>
+        </div>
+        <div id="ft">
+            <button id="clr">Clear List</button>
+        </div>
+        <p style="font-size: 100%; text-align: center;">The changes may take place after reloding the page</p>
+    </div>
+</body>
+</html>
